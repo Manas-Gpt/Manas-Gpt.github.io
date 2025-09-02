@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Render Site
-        run: curl -s ${{ https://teladoc.onrender.com/home }}
+        run: curl -s ${{ secrets.RENDER_SITE_URL }}
